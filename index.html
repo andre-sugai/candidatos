@@ -1,0 +1,2314 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Guia Eleitoral 2026 | Candidaturas e Propostas</title>
+  <meta name="description" content="Guia editorial completo de candidaturas para 2026: Deputados Federais, Deputados Estaduais, Senadoras, Governador e Presidente. Perfis, propostas e colinha eleitoral.">
+  <style>
+    :root {
+      --bg-primary: #fcfbf9;
+      --bg-surface: #ffffff;
+      --bg-card: #ffffff;
+      --bg-subtle: #f4f2ee;
+      --border-color: #e5e2da;
+      --border-hover: #cbc6b9;
+      --text-primary: #1c1b18;
+      --text-secondary: #57534e;
+      --text-muted: #78716c;
+      --accent-color: #2b3a4a;
+      --accent-light: #eef2f6;
+      --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.04), 0 1px 2px rgba(0, 0, 0, 0.02);
+      --shadow-md: 0 4px 12px rgba(0, 0, 0, 0.06), 0 1px 3px rgba(0, 0, 0, 0.04);
+      --shadow-lg: 0 10px 25px rgba(0, 0, 0, 0.08), 0 4px 10px rgba(0, 0, 0, 0.04);
+      --radius-sm: 6px;
+      --radius-md: 10px;
+      --radius-lg: 16px;
+      --font-serif: "Iowan Old Style", "Apple Garamond", "Baskerville", "Times New Roman", "Merriweather", serif;
+      --font-sans: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      --party-pt: #c8102e;
+      --party-psol: #f0a500;
+      --party-rede: #009688;
+      --party-psb: #ea580c;
+      --party-mdb: #059669;
+    }
+
+    [data-theme="dark"] {
+      --bg-primary: #121314;
+      --bg-surface: #1a1c1e;
+      --bg-card: #202226;
+      --bg-subtle: #272a2e;
+      --border-color: #32363c;
+      --border-hover: #484d56;
+      --text-primary: #f1f0ee;
+      --text-secondary: #b5b0a8;
+      --text-muted: #88837a;
+      --accent-color: #63b3ed;
+      --accent-light: #1e293b;
+      --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.3);
+      --shadow-md: 0 4px 12px rgba(0, 0, 0, 0.4);
+      --shadow-lg: 0 10px 25px rgba(0, 0, 0, 0.5);
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html {
+      scroll-behavior: smooth;
+      font-size: 16px;
+    }
+
+    body {
+      font-family: var(--font-sans);
+      background-color: var(--bg-primary);
+      color: var(--text-primary);
+      line-height: 1.65;
+      -webkit-font-smoothing: antialiased;
+      transition: background-color 0.25s ease, color 0.25s ease;
+    }
+
+    /* Top Sticky Navigation */
+    .top-header {
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      background: var(--bg-surface);
+      border-bottom: 1px solid var(--border-color);
+      box-shadow: var(--shadow-sm);
+      backdrop-filter: blur(8px);
+      -webkit-backdrop-filter: blur(8px);
+    }
+
+    .nav-container {
+      max-width: 1080px;
+      margin: 0 auto;
+      padding: 0.75rem 1.25rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 1rem;
+    }
+
+    .brand-logo {
+      font-family: var(--font-serif);
+      font-size: 1.15rem;
+      font-weight: 700;
+      text-decoration: none;
+      color: var(--text-primary);
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      white-space: nowrap;
+    }
+
+    .brand-badge {
+      font-size: 0.7rem;
+      font-family: var(--font-sans);
+      background: var(--accent-light);
+      color: var(--accent-color);
+      padding: 0.15rem 0.5rem;
+      border-radius: 999px;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+    }
+
+    .nav-menu {
+      display: flex;
+      gap: 0.25rem;
+      list-style: none;
+      overflow-x: auto;
+      padding: 0.25rem 0;
+      -webkit-overflow-scrolling: touch;
+      scrollbar-width: none;
+    }
+    .nav-menu::-webkit-scrollbar {
+      display: none;
+    }
+
+    .nav-link {
+      text-decoration: none;
+      color: var(--text-secondary);
+      font-size: 0.85rem;
+      font-weight: 500;
+      padding: 0.4rem 0.75rem;
+      border-radius: var(--radius-sm);
+      white-space: nowrap;
+      transition: all 0.15s ease;
+    }
+
+    .nav-link:hover {
+      background: var(--bg-subtle);
+      color: var(--text-primary);
+    }
+
+    .nav-actions {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      flex-shrink: 0;
+    }
+
+    .btn-icon {
+      background: var(--bg-subtle);
+      border: 1px solid var(--border-color);
+      color: var(--text-primary);
+      width: 36px;
+      height: 36px;
+      border-radius: 50%;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: all 0.2s ease;
+    }
+
+    .btn-icon:hover {
+      border-color: var(--border-hover);
+      transform: translateY(-1px);
+    }
+
+    .btn-cola-toggle {
+      background: var(--text-primary);
+      color: var(--bg-surface);
+      border: none;
+      padding: 0.45rem 0.9rem;
+      border-radius: var(--radius-sm);
+      font-size: 0.85rem;
+      font-weight: 600;
+      cursor: pointer;
+      display: inline-flex;
+      align-items: center;
+      gap: 0.4rem;
+      transition: opacity 0.2s, transform 0.1s;
+      white-space: nowrap;
+    }
+
+    .btn-cola-toggle:hover {
+      opacity: 0.9;
+      transform: translateY(-1px);
+    }
+
+    /* Main Container */
+    .page-wrapper {
+      max-width: 1080px;
+      margin: 0 auto;
+      padding: 2rem 1.25rem 5rem;
+    }
+
+    /* Editorial Hero */
+    .hero-editorial {
+      text-align: center;
+      padding: 2.5rem 1rem 3.5rem;
+      border-bottom: 2px solid var(--border-color);
+      margin-bottom: 3rem;
+    }
+
+    .hero-eyebrow {
+      font-size: 0.8rem;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      font-weight: 700;
+      color: var(--text-muted);
+      margin-bottom: 0.75rem;
+    }
+
+    .hero-title {
+      font-family: var(--font-serif);
+      font-size: 2.75rem;
+      font-weight: 800;
+      letter-spacing: -0.5px;
+      line-height: 1.15;
+      margin-bottom: 1rem;
+      color: var(--text-primary);
+    }
+
+    .hero-subtitle {
+      font-size: 1.15rem;
+      color: var(--text-secondary);
+      max-width: 680px;
+      margin: 0 auto 1.5rem;
+      font-weight: 400;
+    }
+
+    .urna-sequence-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      background: var(--bg-subtle);
+      border: 1px solid var(--border-color);
+      padding: 0.5rem 1rem;
+      border-radius: 999px;
+      font-size: 0.825rem;
+      color: var(--text-secondary);
+    }
+
+    /* Search and Filter Bar */
+    .filter-bar {
+      margin-bottom: 2.5rem;
+      display: flex;
+      flex-direction: column;
+      gap: 0.75rem;
+    }
+
+    .search-input-wrapper {
+      position: relative;
+      width: 100%;
+    }
+
+    .search-input {
+      width: 100%;
+      padding: 0.85rem 1.25rem 0.85rem 2.85rem;
+      font-size: 0.95rem;
+      border-radius: var(--radius-md);
+      border: 1px solid var(--border-color);
+      background: var(--bg-surface);
+      color: var(--text-primary);
+      outline: none;
+      transition: border-color 0.2s, box-shadow 0.2s;
+    }
+
+    .search-input:focus {
+      border-color: var(--accent-color);
+      box-shadow: 0 0 0 3px rgba(43, 58, 74, 0.12);
+    }
+
+    .search-icon {
+      position: absolute;
+      left: 1rem;
+      top: 50%;
+      transform: translateY(-50%);
+      color: var(--text-muted);
+      pointer-events: none;
+    }
+
+    /* Section Headers */
+    .section-block {
+      margin-bottom: 4rem;
+      scroll-margin-top: 5rem;
+    }
+
+    .section-header {
+      display: flex;
+      align-items: baseline;
+      justify-content: space-between;
+      border-bottom: 2px solid var(--text-primary);
+      padding-bottom: 0.75rem;
+      margin-bottom: 2rem;
+      gap: 1rem;
+      flex-wrap: wrap;
+    }
+
+    .section-title-group {
+      display: flex;
+      align-items: baseline;
+      gap: 0.85rem;
+      flex-wrap: wrap;
+    }
+
+    .section-order-badge {
+      font-size: 0.75rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      color: var(--text-muted);
+    }
+
+    .section-title {
+      font-family: var(--font-serif);
+      font-size: 1.85rem;
+      font-weight: 700;
+      color: var(--text-primary);
+    }
+
+    .section-digits-info {
+      font-size: 0.825rem;
+      color: var(--text-muted);
+      background: var(--bg-subtle);
+      padding: 0.2rem 0.6rem;
+      border-radius: var(--radius-sm);
+      border: 1px solid var(--border-color);
+    }
+
+    /* Candidate Grid & Card */
+    .candidate-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 2rem;
+    }
+
+    .candidate-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border-color);
+      border-radius: var(--radius-lg);
+      padding: 2rem;
+      box-shadow: var(--shadow-sm);
+      transition: border-color 0.2s, box-shadow 0.2s, transform 0.15s;
+      position: relative;
+    }
+
+    .candidate-card:hover {
+      box-shadow: var(--shadow-md);
+      border-color: var(--border-hover);
+    }
+
+    .card-top-bar {
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+      gap: 1.5rem;
+      flex-wrap: wrap;
+      margin-bottom: 1.5rem;
+      padding-bottom: 1.25rem;
+      border-bottom: 1px dashed var(--border-color);
+    }
+
+    .candidate-headline {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      flex-wrap: wrap;
+    }
+
+    .candidate-avatar {
+      width: 56px;
+      height: 56px;
+      border-radius: 50%;
+      background: var(--bg-subtle);
+      border: 2px solid var(--border-color);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-family: var(--font-serif);
+      font-size: 1.35rem;
+      font-weight: 700;
+      color: var(--text-primary);
+      flex-shrink: 0;
+    }
+
+    .candidate-identity {
+      display: flex;
+      flex-direction: column;
+      gap: 0.25rem;
+    }
+
+    .candidate-name {
+      font-family: var(--font-serif);
+      font-size: 1.6rem;
+      font-weight: 700;
+      color: var(--text-primary);
+      line-height: 1.2;
+    }
+
+    .party-tag {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.35rem;
+      font-size: 0.8rem;
+      font-weight: 700;
+      padding: 0.2rem 0.6rem;
+      border-radius: 4px;
+      width: fit-content;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+    }
+
+    .party-tag.psol { background: rgba(240, 165, 0, 0.15); color: #b77900; }
+    .party-tag.pt { background: rgba(200, 16, 46, 0.12); color: #c8102e; }
+    .party-tag.rede { background: rgba(0, 150, 136, 0.15); color: #00796b; }
+    .party-tag.psb { background: rgba(234, 88, 12, 0.15); color: #c2410c; }
+    .party-tag.mdb { background: rgba(5, 150, 105, 0.15); color: #047857; }
+
+    [data-theme="dark"] .party-tag.psol { background: rgba(240, 165, 0, 0.25); color: #fbbf24; }
+    [data-theme="dark"] .party-tag.pt { background: rgba(200, 16, 46, 0.25); color: #f87171; }
+    [data-theme="dark"] .party-tag.rede { background: rgba(0, 150, 136, 0.25); color: #2dd4bf; }
+    [data-theme="dark"] .party-tag.psb { background: rgba(234, 88, 12, 0.25); color: #fb923c; }
+    [data-theme="dark"] .party-tag.mdb { background: rgba(5, 150, 105, 0.25); color: #34d399; }
+
+    /* Ballot Box & Copy Button */
+    .ballot-action-group {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      flex-shrink: 0;
+    }
+
+    .ballot-box {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.75rem;
+      background: var(--bg-subtle);
+      border: 1px solid var(--border-color);
+      border-radius: var(--radius-md);
+      padding: 0.4rem 0.85rem;
+      cursor: pointer;
+      transition: all 0.2s ease;
+      font-family: "Courier New", Courier, monospace, monospace;
+    }
+
+    .ballot-box:hover {
+      border-color: var(--accent-color);
+      background: var(--accent-light);
+    }
+
+    .ballot-number {
+      font-size: 1.5rem;
+      font-weight: 800;
+      letter-spacing: 2px;
+      color: var(--text-primary);
+    }
+
+    .btn-copy-num {
+      background: transparent;
+      border: none;
+      color: var(--text-muted);
+      cursor: pointer;
+      padding: 0.2rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: color 0.15s;
+    }
+
+    .ballot-box:hover .btn-copy-num {
+      color: var(--accent-color);
+    }
+
+    .btn-add-cola {
+      border: 1px solid var(--border-color);
+      background: var(--bg-surface);
+      color: var(--text-primary);
+      padding: 0.55rem 0.95rem;
+      border-radius: var(--radius-md);
+      font-size: 0.825rem;
+      font-weight: 600;
+      cursor: pointer;
+      display: inline-flex;
+      align-items: center;
+      gap: 0.4rem;
+      transition: all 0.2s;
+    }
+
+    .btn-add-cola:hover {
+      background: var(--bg-subtle);
+      border-color: var(--border-hover);
+    }
+
+    .btn-add-cola.selected {
+      background: #059669;
+      color: #ffffff;
+      border-color: #059669;
+    }
+
+    /* Content Body */
+    .candidate-body {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 1.5rem;
+    }
+
+    .bio-section {
+      background: var(--bg-subtle);
+      border-radius: var(--radius-md);
+      padding: 1.15rem 1.35rem;
+      border-left: 3px solid var(--border-hover);
+    }
+
+    .bio-title {
+      font-size: 0.75rem;
+      text-transform: uppercase;
+      font-weight: 700;
+      letter-spacing: 1px;
+      color: var(--text-muted);
+      margin-bottom: 0.4rem;
+    }
+
+    .bio-text {
+      font-size: 0.95rem;
+      color: var(--text-secondary);
+      line-height: 1.6;
+    }
+
+    .proposals-block {
+      display: flex;
+      flex-direction: column;
+      gap: 0.85rem;
+    }
+
+    .proposals-title {
+      font-size: 0.85rem;
+      text-transform: uppercase;
+      font-weight: 700;
+      letter-spacing: 0.75px;
+      color: var(--text-primary);
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+
+    .proposal-list {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 0.75rem;
+    }
+
+    .proposal-item {
+      display: flex;
+      align-items: flex-start;
+      gap: 0.75rem;
+      font-size: 0.925rem;
+      color: var(--text-secondary);
+      line-height: 1.55;
+    }
+
+    .proposal-bullet {
+      width: 7px;
+      height: 7px;
+      border-radius: 50%;
+      background: var(--text-muted);
+      margin-top: 0.55rem;
+      flex-shrink: 0;
+    }
+
+    .proposal-tag-name {
+      font-weight: 700;
+      color: var(--text-primary);
+    }
+
+    /* Candidate External Links */
+    .candidate-links {
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+      flex-wrap: wrap;
+      margin-top: 0.5rem;
+      padding-top: 1rem;
+      border-top: 1px solid var(--border-color);
+    }
+
+    .link-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.4rem;
+      text-decoration: none;
+      font-size: 0.825rem;
+      font-weight: 500;
+      padding: 0.4rem 0.85rem;
+      border-radius: 999px;
+      border: 1px solid var(--border-color);
+      color: var(--text-secondary);
+      background: var(--bg-surface);
+      transition: all 0.2s ease;
+    }
+
+    .link-badge:hover {
+      border-color: var(--text-primary);
+      color: var(--text-primary);
+      transform: translateY(-1px);
+    }
+
+    .link-badge.instagram {
+      color: #e1306c;
+      border-color: rgba(225, 48, 108, 0.3);
+      background: rgba(225, 48, 108, 0.04);
+    }
+    .link-badge.instagram:hover {
+      border-color: #e1306c;
+      background: rgba(225, 48, 108, 0.1);
+    }
+
+    /* Floating Cola Eleitoral Panel */
+    .cola-drawer {
+      position: fixed;
+      bottom: 1.5rem;
+      right: 1.5rem;
+      z-index: 900;
+      width: 380px;
+      max-width: calc(100vw - 2rem);
+      background: var(--bg-surface);
+      border: 1px solid var(--border-color);
+      border-radius: var(--radius-lg);
+      box-shadow: var(--shadow-lg);
+      display: flex;
+      flex-direction: column;
+      overflow: hidden;
+      transform: translateY(120%);
+      opacity: 0;
+      pointer-events: none;
+      transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1), opacity 0.25s ease;
+    }
+
+    .cola-drawer.open {
+      transform: translateY(0);
+      opacity: 1;
+      pointer-events: auto;
+    }
+
+    .cola-header {
+      background: var(--bg-subtle);
+      padding: 0.9rem 1.25rem;
+      border-bottom: 1px solid var(--border-color);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .cola-title {
+      font-family: var(--font-serif);
+      font-size: 1.1rem;
+      font-weight: 700;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+
+    .cola-close {
+      background: none;
+      border: none;
+      font-size: 1.25rem;
+      color: var(--text-muted);
+      cursor: pointer;
+      padding: 0.2rem;
+      line-height: 1;
+    }
+
+    .cola-body {
+      padding: 1rem 1.25rem;
+      max-height: 55vh;
+      overflow-y: auto;
+      display: flex;
+      flex-direction: column;
+      gap: 0.75rem;
+    }
+
+    .cola-slot {
+      background: var(--bg-subtle);
+      border: 1px dashed var(--border-color);
+      border-radius: var(--radius-md);
+      padding: 0.65rem 0.85rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 0.5rem;
+    }
+
+    .cola-slot.filled {
+      border-style: solid;
+      border-color: var(--accent-color);
+      background: var(--accent-light);
+    }
+
+    .slot-meta {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .slot-label {
+      font-size: 0.7rem;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      font-weight: 700;
+      color: var(--text-muted);
+    }
+
+    .slot-value {
+      font-size: 0.875rem;
+      font-weight: 600;
+      color: var(--text-primary);
+    }
+
+    .slot-number {
+      font-family: "Courier New", Courier, monospace;
+      font-size: 1.15rem;
+      font-weight: 800;
+      color: var(--accent-color);
+    }
+
+    .cola-actions {
+      padding: 0.85rem 1.25rem;
+      border-top: 1px solid var(--border-color);
+      background: var(--bg-surface);
+      display: flex;
+      gap: 0.5rem;
+    }
+
+    .btn-cola-action {
+      flex: 1;
+      padding: 0.6rem 0.75rem;
+      border-radius: var(--radius-sm);
+      font-size: 0.8rem;
+      font-weight: 600;
+      cursor: pointer;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.35rem;
+      transition: all 0.15s;
+    }
+
+    .btn-cola-whatsapp {
+      background: #25d366;
+      color: #ffffff;
+      border: none;
+    }
+    .btn-cola-whatsapp:hover {
+      background: #20ba5a;
+    }
+
+    .btn-cola-copy {
+      background: var(--bg-subtle);
+      color: var(--text-primary);
+      border: 1px solid var(--border-color);
+    }
+    .btn-cola-copy:hover {
+      background: var(--border-color);
+    }
+
+    .btn-cola-print {
+      background: var(--bg-subtle);
+      color: var(--text-primary);
+      border: 1px solid var(--border-color);
+    }
+
+    /* Toast Notification */
+    .toast-notice {
+      position: fixed;
+      bottom: 2rem;
+      left: 50%;
+      transform: translateX(-50%) translateY(100px);
+      background: #1c1b18;
+      color: #ffffff;
+      padding: 0.65rem 1.25rem;
+      border-radius: 999px;
+      font-size: 0.875rem;
+      font-weight: 500;
+      box-shadow: 0 4px 14px rgba(0, 0, 0, 0.2);
+      z-index: 1000;
+      opacity: 0;
+      transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      pointer-events: none;
+    }
+
+    .toast-notice.show {
+      transform: translateX(-50%) translateY(0);
+      opacity: 1;
+    }
+
+    /* Footer */
+    .site-footer {
+      border-top: 1px solid var(--border-color);
+      margin-top: 4rem;
+      padding: 3rem 1.25rem;
+      text-align: center;
+      color: var(--text-muted);
+      font-size: 0.85rem;
+    }
+
+    .footer-content {
+      max-width: 600px;
+      margin: 0 auto;
+      display: flex;
+      flex-direction: column;
+      gap: 0.75rem;
+    }
+
+    /* Print Styles */
+    @media print {
+      .top-header,
+      .filter-bar,
+      .ballot-action-group,
+      .candidate-links,
+      .site-footer,
+      .cola-drawer,
+      .btn-icon {
+        display: none !important;
+      }
+
+      body {
+        background: #ffffff !important;
+        color: #000000 !important;
+        font-size: 11pt;
+      }
+
+      .page-wrapper {
+        padding: 0 !important;
+        max-width: 100% !important;
+      }
+
+      .hero-editorial {
+        padding: 1rem 0;
+        margin-bottom: 1.5rem;
+      }
+
+      .hero-title {
+        font-size: 20pt;
+      }
+
+      .candidate-card {
+        page-break-inside: avoid;
+        box-shadow: none !important;
+        border: 1px solid #ccc !important;
+        margin-bottom: 1rem;
+        padding: 1rem !important;
+      }
+
+      .section-block {
+        page-break-inside: auto;
+        margin-bottom: 2rem;
+      }
+
+      .section-header {
+        border-bottom: 2px solid #000 !important;
+      }
+    }
+
+    @media (max-width: 768px) {
+      .hero-title {
+        font-size: 2.1rem;
+      }
+      .candidate-card {
+        padding: 1.25rem;
+      }
+      .candidate-name {
+        font-size: 1.35rem;
+      }
+      .ballot-number {
+        font-size: 1.25rem;
+      }
+      .nav-menu {
+        display: none;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Sticky Top Navigation -->
+  <header class="top-header">
+    <div class="nav-container">
+      <a href="#inicio" class="brand-logo">
+        <span>Eleições 2026</span>
+        <span class="brand-badge">SP &amp; Brasil</span>
+      </a>
+
+      <nav aria-label="Navegação pelos cargos">
+        <ul class="nav-menu">
+          <li><a href="#deputado-federal" class="nav-link">1. Dep. Federal</a></li>
+          <li><a href="#deputado-estadual" class="nav-link">2. Dep. Estadual</a></li>
+          <li><a href="#senadoras" class="nav-link">3. Senadoras</a></li>
+          <li><a href="#governador" class="nav-link">4. Governador</a></li>
+          <li><a href="#presidente" class="nav-link">5. Presidente</a></li>
+        </ul>
+      </nav>
+
+      <div class="nav-actions">
+        <button id="themeToggleBtn" class="btn-icon" aria-label="Alternar tema claro/escuro" title="Alternar tema">
+          <svg id="themeIcon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="12" r="5"></circle>
+            <line x1="12" y1="1" x2="12" y2="3"></line>
+            <line x1="12" y1="21" x2="12" y2="23"></line>
+            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+            <line x1="1" y1="12" x2="3" y2="12"></line>
+            <line x1="21" y1="12" x2="23" y2="12"></line>
+            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+          </svg>
+        </button>
+
+        <button id="colaToggleBtn" class="btn-cola-toggle" aria-label="Abrir Minha Colinha Eleitoral">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+            <polyline points="14 2 14 8 20 8"></polyline>
+            <line x1="16" y1="13" x2="8" y2="13"></line>
+            <line x1="16" y1="17" x2="8" y2="17"></line>
+            <polyline points="10 9 9 9 8 9"></polyline>
+          </svg>
+          <span>Minha Cola (<span id="colaCount">0</span>)</span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <div class="page-wrapper">
+
+    <!-- Hero Editorial -->
+    <header class="hero-editorial" id="inicio">
+      <div class="hero-eyebrow">Caderno Especial Eleitoral &bull; SP 2026</div>
+      <h1 class="hero-title">Guia de Candidaturas e Propostas</h1>
+      <p class="hero-subtitle">
+        Consulte trajetórias, posicionamentos e números de votação organizados na ordem oficial da urna eletrônica. Selecione seus representantes para montar e exportar sua cola eleitoral.
+      </p>
+      <div class="urna-sequence-badge">
+        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
+          <line x1="8" y1="21" x2="16" y2="21"></line>
+          <line x1="12" y1="17" x2="12" y2="21"></line>
+        </svg>
+        Ordem da Urna: Deputado Federal &rarr; Deputado Estadual &rarr; Senadoras (2 vagas) &rarr; Governador &rarr; Presidente
+      </div>
+    </header>
+
+    <!-- Search / Filter -->
+    <section class="filter-bar" aria-label="Filtro de busca">
+      <div class="search-input-wrapper">
+        <svg class="search-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <circle cx="11" cy="11" r="8"></circle>
+          <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+        </svg>
+        <input type="text" id="searchInput" class="search-input" placeholder="Buscar por candidato, partido, tema (ex: educação, clima, moradia, SUS)...">
+      </div>
+    </section>
+
+    <!-- SEÇÃO 1: DEPUTADO FEDERAL -->
+    <section id="deputado-federal" class="section-block">
+      <header class="section-header">
+        <div class="section-title-group">
+          <span class="section-order-badge">1º Voto na Urna</span>
+          <h2 class="section-title">Deputado Federal</h2>
+        </div>
+        <span class="section-digits-info">4 dígitos na urna</span>
+      </header>
+
+      <div class="candidate-grid">
+
+        <!-- Nabil Bonduki -->
+        <article class="candidate-card" data-cargo="deputado-federal" data-nome="Nabil Bonduki" data-numero="1373" data-partido="PSOL">
+          <div class="card-top-bar">
+            <div class="candidate-headline">
+              <div class="candidate-avatar">NB</div>
+              <div class="candidate-identity">
+                <h3 class="candidate-name">Nabil Bonduki</h3>
+                <span class="party-tag psol">PSOL</span>
+              </div>
+            </div>
+            <div class="ballot-action-group">
+              <div class="ballot-box" onclick="copyBallot('1373', 'Nabil Bonduki')" title="Clique para copiar o número">
+                <span class="ballot-number">1373</span>
+                <button class="btn-copy-num" aria-label="Copiar número 1373">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg>
+                </button>
+              </div>
+              <button class="btn-add-cola" onclick="toggleCola('deputado-federal', 'Nabil Bonduki', '1373', 'PSOL')">
+                <span>+ Colinha</span>
+              </button>
+            </div>
+          </div>
+
+          <div class="candidate-body">
+            <div class="bio-section">
+              <div class="bio-title">Perfil</div>
+              <p class="bio-text">Arquiteto, urbanista e professor titular da USP; vereador de São Paulo (reeleito em 2024). Histórico em políticas de habitação, planejamento urbano e cultura.</p>
+            </div>
+
+            <div class="proposals-block">
+              <div class="proposals-title">
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"></path></svg>
+                Principais Propostas &amp; Posicionamentos (2026)
+              </div>
+              <ul class="proposal-list">
+                <li class="proposal-item">
+                  <span class="proposal-bullet"></span>
+                  <div><strong class="proposal-tag-name">Habitação e direito à cidade:</strong> Ampliar programas de habitação social, regularização fundiária e combate aos despejos.</div>
+                </li>
+                <li class="proposal-item">
+                  <span class="proposal-bullet"></span>
+                  <div><strong class="proposal-tag-name">Planejamento urbano e mobilidade:</strong> Investir em transporte público, integração modal e cidades mais justas e sustentáveis.</div>
+                </li>
+                <li class="proposal-item">
+                  <span class="proposal-bullet"></span>
+                  <div><strong class="proposal-tag-name">Cultura e patrimônio:</strong> Fortalecer políticas culturais, museus, centros culturais e proteção do patrimônio.</div>
+                </li>
+                <li class="proposal-item">
+                  <span class="proposal-bullet"></span>
+                  <div><strong class="proposal-tag-name">Meio ambiente e clima:</strong> Políticas urbanas com foco em adaptação climática, áreas verdes e redução de riscos.</div>
+                </li>
+                <li class="proposal-item">
+                  <span class="proposal-bullet"></span>
+                  <div><strong class="proposal-tag-name">Transparência e participação:</strong> Conselhos, ouvidorias e controle social nas políticas públicas.</div>
+                </li>
+              </ul>
+            </div>
+
+            <div class="candidate-links">
+              <a href="https://www.instagram.com/nabil_bonduki/" target="_blank" rel="noopener noreferrer" class="link-badge instagram">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
+                @nabil_bonduki
+              </a>
+              <a href="https://nabilbonduki.com.br/" target="_blank" rel="noopener noreferrer" class="link-badge">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><line x1="2" y1="12" x2="22" y2="12"></line><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path></svg>
+                nabilbonduki.com.br
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Jean Wyllys -->
+        <article class="candidate-card" data-cargo="deputado-federal" data-nome="Jean Wyllys" data-numero="1350" data-partido="PT">
+          <div class="card-top-bar">
+            <div class="candidate-headline">
+              <div class="candidate-avatar">JW</div>
+              <div class="candidate-identity">
+                <h3 class="candidate-name">Jean Wyllys</h3>
+                <span class="party-tag pt">PT</span>
+              </div>
+            </div>
+            <div class="ballot-action-group">
+              <div class="ballot-box" onclick="copyBallot('1350', 'Jean Wyllys')" title="Clique para copiar o número">
+                <span class="ballot-number">1350</span>
+                <button class="btn-copy-num" aria-label="Copiar número 1350">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg>
+                </button>
+              </div>
+              <button class="btn-add-cola" onclick="toggleCola('deputado-federal', 'Jean Wyllys', '1350', 'PT')">
+                <span>+ Colinha</span>
+              </button>
+            </div>
+          </div>
+
+          <div class="candidate-body">
+            <div class="bio-section">
+              <div class="bio-title">Perfil</div>
+              <p class="bio-text">Jornalista, escritor, professor e ex-deputado federal (PSOL-RJ). Retornou à disputa eleitoral em 2026, agora pelo PT de SP; atua em direitos humanos, diversidade e cultura.</p>
+            </div>
+
+            <div class="proposals-block">
+              <div class="proposals-title">
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"></path></svg>
+                Principais Propostas &amp; Posicionamentos (2026)
+              </div>
+              <ul class="proposal-list">
+                <li class="proposal-item">
+                  <span class="proposal-bullet"></span>
+                  <div><strong class="proposal-tag-name">Direitos humanos e diversidade:</strong> Defesa de políticas LGBTQIA+, combate à discriminação e promoção da igualdade.</div>
+                </li>
+                <li class="proposal-item">
+                  <span class="proposal-bullet"></span>
+                  <div><strong class="proposal-tag-name">Cultura e educação:</strong> Apoio à produção cultural independente, leitura, artes e educação pública.</div>
+                </li>
+                <li class="proposal-item">
+                  <span class="proposal-bullet"></span>
+                  <div><strong class="proposal-tag-name">Democracia e liberdades civis:</strong> Oposição a retrocessos autoritários e defesa de direitos fundamentais.</div>
+                </li>
+                <li class="proposal-item">
+                  <span class="proposal-bullet"></span>
+                  <div><strong class="proposal-tag-name">Saúde mental e políticas sociais:</strong> Atenção à saúde mental, redução de danos e políticas de inclusão social.</div>
+                </li>
+                <li class="proposal-item">
+                  <span class="proposal-bullet"></span>
+                  <div><strong class="proposal-tag-name">Representatividade:</strong> Ampliar presença de grupos marginalizados na política e nos espaços de decisão.</div>
+                </li>
+              </ul>
+            </div>
+
+            <div class="candidate-links">
+              <a href="https://www.instagram.com/jeanwyllys_real/" target="_blank" rel="noopener noreferrer" class="link-badge instagram">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
+                @jeanwyllys_real
+              </a>
+              <span class="link-badge" style="opacity: 0.6; cursor: default;">Sem site oficial informado</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- Luna Zarattini -->
+        <article class="candidate-card" data-cargo="deputado-federal" data-nome="Luna Zarattini" data-numero="1302" data-partido="PT">
+          <div class="card-top-bar">
+            <div class="candidate-headline">
+              <div class="candidate-avatar">LZ</div>
+              <div class="candidate-identity">
+                <h3 class="candidate-name">Luna Zarattini</h3>
+                <span class="party-tag pt">PT</span>
+              </div>
+            </div>
+            <div class="ballot-action-group">
+              <div class="ballot-box" onclick="copyBallot('1302', 'Luna Zarattini')" title="Clique para copiar o número">
+                <span class="ballot-number">1302</span>
+                <button class="btn-copy-num" aria-label="Copiar número 1302">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg>
+                </button>
+              </div>
+              <button class="btn-add-cola" onclick="toggleCola('deputado-federal', 'Luna Zarattini', '1302', 'PT')">
+                <span>+ Colinha</span>
+              </button>
+            </div>
+          </div>
+
+          <div class="candidate-body">
+            <div class="bio-section">
+              <div class="bio-title">Perfil</div>
+              <p class="bio-text">Advogada, cientista social e vereadora de São Paulo (a mais votada da história do PT na capital, em 2024). Presidenta da Comissão de Direitos Humanos da Câmara Municipal; neta do ex-deputado Ricardo Zarattini.</p>
+            </div>
+
+            <div class="proposals-block">
+              <div class="proposals-title">
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"></path></svg>
+                Principais Propostas &amp; Posicionamentos (2026)
+              </div>
+              <ul class="proposal-list">
+                <li class="proposal-item">
+                  <span class="proposal-bullet"></span>
+                  <div><strong class="proposal-tag-name">Direitos humanos e igualdade:</strong> Políticas para mulheres, população negra, LGBTQIA+, juventude e grupos vulneráveis.</div>
+                </li>
+                <li class="proposal-item">
+                  <span class="proposal-bullet"></span>
+                  <div><strong class="proposal-tag-name">Habitação e direito à cidade:</strong> Ampliar habitação social, regularização fundiária e combater despejos.</div>
+                </li>
+                <li class="proposal-item">
+                  <span class="proposal-bullet"></span>
+                  <div><strong class="proposal-tag-name">Segurança pública com direitos humanos:</strong> Enfrentar violência policial, defender controle externo e políticas preventivas.</div>
+                </li>
+                <li class="proposal-item">
+                  <span class="proposal-bullet"></span>
+                  <div><strong class="proposal-tag-name">Saúde e educação públicas:</strong> Reforçar SUS e escola pública, com foco em acesso e qualidade.</div>
+                </li>
+                <li class="proposal-item">
+                  <span class="proposal-bullet"></span>
+                  <div><strong class="proposal-tag-name">Participação popular e transparência:</strong> Fortalecer conselhos, ouvidorias e controle social das políticas.</div>
+                </li>
+              </ul>
+            </div>
+
+            <div class="candidate-links">
+              <a href="https://www.instagram.com/lunazarattini/" target="_blank" rel="noopener noreferrer" class="link-badge instagram">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
+                @lunazarattini
+              </a>
+              <a href="https://lunazarattini.com.br/" target="_blank" rel="noopener noreferrer" class="link-badge">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><line x1="2" y1="12" x2="22" y2="12"></line><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path></svg>
+                lunazarattini.com.br
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Marco Antonio Villa -->
+        <article class="candidate-card" data-cargo="deputado-federal" data-nome="Marco Antonio Villa" data-numero="1566" data-partido="MDB">
+          <div class="card-top-bar">
+            <div class="candidate-headline">
+              <div class="candidate-avatar">MV</div>
+              <div class="candidate-identity">
+                <h3 class="candidate-name">Marco Antonio Villa</h3>
+                <span class="party-tag mdb">MDB</span>
+              </div>
+            </div>
+            <div class="ballot-action-group">
+              <div class="ballot-box" onclick="copyBallot('1566', 'Marco Antonio Villa')" title="Clique para copiar o número">
+                <span class="ballot-number">1566</span>
+                <button class="btn-copy-num" aria-label="Copiar número 1566">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg>
+                </button>
+              </div>
+              <button class="btn-add-cola" onclick="toggleCola('deputado-federal', 'Marco Antonio Villa', '1566', 'MDB')">
+                <span>+ Colinha</span>
+              </button>
+            </div>
+          </div>
+
+          <div class="candidate-body">
+            <div class="bio-section">
+              <div class="bio-title">Perfil</div>
+              <p class="bio-text">Historiador, escritor, professor universitário (UFSCar/UFOP) e comentarista político (TV Cultura, Jovem Pan, YouTube). Candidato a deputado federal em 2022 (Cidadania) e, agora, em 2026 pelo MDB.</p>
+            </div>
+
+            <div class="proposals-block">
+              <div class="proposals-title">
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"></path></svg>
+                Principais Propostas &amp; Posicionamentos (2026)
+              </div>
+              <ul class="proposal-list">
+                <li class="proposal-item">
+                  <span class="proposal-bullet"></span>
+                  <div><strong class="proposal-tag-name">Reforma política e eleitoral:</strong> Fim do voto proporcional e adoção do voto distrital misto para aproximar deputados de suas bases.</div>
+                </li>
+                <li class="proposal-item">
+                  <span class="proposal-bullet"></span>
+                  <div><strong class="proposal-tag-name">Lei do Impeachment:</strong> Criar nova lei atualizada à Constituição de 1988; decisão sobre abrir impeachment deve ser do plenário, não do presidente da Câmara/Senado.</div>
+                </li>
+                <li class="proposal-item">
+                  <span class="proposal-bullet"></span>
+                  <div><strong class="proposal-tag-name">Defesa da Constituição e da República:</strong> Oposição a reformas constitucionais profundas em clima de alta polarização.</div>
+                </li>
+                <li class="proposal-item">
+                  <span class="proposal-bullet"></span>
+                  <div><strong class="proposal-tag-name">Educação:</strong> Tratar educação como base da cidadania; apoio à escola pública e à universidade.</div>
+                </li>
+                <li class="proposal-item">
+                  <span class="proposal-bullet"></span>
+                  <div><strong class="proposal-tag-name">Combate à corrupção e ao extremismo:</strong> Contra aparelhamento de instituições e contra extremismos políticos.</div>
+                </li>
+              </ul>
+            </div>
+
+            <div class="candidate-links">
+              <a href="https://www.instagram.com/marcoantoniovillaoficial/" target="_blank" rel="noopener noreferrer" class="link-badge instagram">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
+                @marcoantoniovillaoficial
+              </a>
+              <a href="http://www.blogdovilla.com.br" target="_blank" rel="noopener noreferrer" class="link-badge">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><line x1="2" y1="12" x2="22" y2="12"></line><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path></svg>
+                blogdovilla.com.br
+              </a>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- SEÇÃO 2: DEPUTADO ESTADUAL -->
+    <section id="deputado-estadual" class="section-block">
+      <header class="section-header">
+        <div class="section-title-group">
+          <span class="section-order-badge">2º Voto na Urna</span>
+          <h2 class="section-title">Deputado Estadual</h2>
+        </div>
+        <span class="section-digits-info">5 dígitos na urna</span>
+      </header>
+
+      <div class="candidate-grid">
+
+        <!-- Carlos Giannazi -->
+        <article class="candidate-card" data-cargo="deputado-estadual" data-nome="Carlos Giannazi" data-numero="50789" data-partido="PSOL">
+          <div class="card-top-bar">
+            <div class="candidate-headline">
+              <div class="candidate-avatar">CG</div>
+              <div class="candidate-identity">
+                <h3 class="candidate-name">Carlos Giannazi</h3>
+                <span class="party-tag psol">PSOL</span>
+              </div>
+            </div>
+            <div class="ballot-action-group">
+              <div class="ballot-box" onclick="copyBallot('50789', 'Carlos Giannazi')" title="Clique para copiar o número">
+                <span class="ballot-number">50789</span>
+                <button class="btn-copy-num" aria-label="Copiar número 50789">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg>
+                </button>
+              </div>
+              <button class="btn-add-cola" onclick="toggleCola('deputado-estadual', 'Carlos Giannazi', '50789', 'PSOL')">
+                <span>+ Colinha</span>
+              </button>
+            </div>
+          </div>
+
+          <div class="candidate-body">
+            <div class="bio-section">
+              <div class="bio-title">Perfil</div>
+              <p class="bio-text">Professor, diretor de escola pública e deputado estadual reeleito (atualmente no 4º mandato). Atua principalmente em educação, direitos dos servidores e transparência.</p>
+            </div>
+
+            <div class="proposals-block">
+              <div class="proposals-title">
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"></path></svg>
+                Principais Propostas &amp; Posicionamentos (2026)
+              </div>
+              <ul class="proposal-list">
+                <li class="proposal-item">
+                  <span class="proposal-bullet"></span>
+                  <div><strong class="proposal-tag-name">Educação pública:</strong> Valorização de professores e servidores, melhoria de salários e planos de carreira; defesa de escolas integrais e de qualidade.</div>
+                </li>
+                <li class="proposal-item">
+                  <span class="proposal-bullet"></span>
+                  <div><strong class="proposal-tag-name">Direitos dos servidores:</strong> Combate à precarização, defesa de concursos e de condições de trabalho na rede estadual.</div>
+                </li>
+                <li class="proposal-item">
+                  <span class="proposal-bullet"></span>
+                  <div><strong class="proposal-tag-name">Transparência e controle:</strong> Fiscalização rigorosa do orçamento estadual, combate a desperdícios e irregularidades.</div>
+                </li>
+                <li class="proposal-item">
+                  <span class="proposal-bullet"></span>
+                  <div><strong class="proposal-tag-name">Direitos humanos e inclusão:</strong> Políticas para população LGBTQIAP+, igualdade racial, acessibilidade e proteção a grupos vulneráveis.</div>
+                </li>
+                <li class="proposal-item">
+                  <span class="proposal-bullet"></span>
+                  <div><strong class="proposal-tag-name">Transporte e mobilidade:</strong> Defesa de transporte público acessível e de políticas que priorizem o usuário em vez de concessões onerosas.</div>
+                </li>
+              </ul>
+            </div>
+
+            <div class="candidate-links">
+              <a href="https://www.instagram.com/carlosgiannazioficial/" target="_blank" rel="noopener noreferrer" class="link-badge instagram">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
+                @carlosgiannazioficial
+              </a>
+              <a href="https://carlosgiannazi.com.br/" target="_blank" rel="noopener noreferrer" class="link-badge">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><line x1="2" y1="12" x2="22" y2="12"></line><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path></svg>
+                carlosgiannazi.com.br
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Luiza Erundina -->
+        <article class="candidate-card" data-cargo="deputado-estadual" data-nome="Luiza Erundina" data-numero="50555" data-partido="PSOL">
+          <div class="card-top-bar">
+            <div class="candidate-headline">
+              <div class="candidate-avatar">LE</div>
+              <div class="candidate-identity">
+                <h3 class="candidate-name">Luiza Erundina</h3>
+                <span class="party-tag psol">PSOL</span>
+              </div>
+            </div>
+            <div class="ballot-action-group">
+              <div class="ballot-box" onclick="copyBallot('50555', 'Luiza Erundina')" title="Clique para copiar o número">
+                <span class="ballot-number">50555</span>
+                <button class="btn-copy-num" aria-label="Copiar número 50555">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg>
+                </button>
+              </div>
+              <button class="btn-add-cola" onclick="toggleCola('deputado-estadual', 'Luiza Erundina', '50555', 'PSOL')">
+                <span>+ Colinha</span>
+              </button>
+            </div>
+          </div>
+
+          <div class="candidate-body">
+            <div class="bio-section">
+              <div class="bio-title">Perfil</div>
+              <p class="bio-text">Assistente social, 91 anos; primeira mulher prefeita de São Paulo (1989–1992). Deputada federal por SP desde 1999 (vários mandatos), atualmente no PSOL (Federação PSOL-REDE).</p>
+            </div>
+
+            <div class="proposals-block">
+              <div class="proposals-title">
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"></path></svg>
+                Principais Propostas &amp; Posicionamentos (2026)
+              </div>
+              <ul class="proposal-list">
+                <li class="proposal-item">
+                  <span class="proposal-bullet"></span>
+                  <div><strong class="proposal-tag-name">Transporte público e tarifa zero:</strong> Defender mobilidade como direito, com passe livre e melhoria do sistema de transporte.</div>
+                </li>
+                <li class="proposal-item">
+                  <span class="proposal-bullet"></span>
+                  <div><strong class="proposal-tag-name">Direitos das mulheres, crianças e adolescentes:</strong> Políticas de enfrentamento à violência e proteção social.</div>
+                </li>
+                <li class="proposal-item">
+                  <span class="proposal-bullet"></span>
+                  <div><strong class="proposal-tag-name">Democratização da comunicação:</strong> Contra monopólios da mídia, por comunicação plural e pública.</div>
+                </li>
+                <li class="proposal-item">
+                  <span class="proposal-bullet"></span>
+                  <div><strong class="proposal-tag-name">Participação popular e controle social:</strong> Transparência, conselhos e orçamento participativo.</div>
+                </li>
+                <li class="proposal-item">
+                  <span class="proposal-bullet"></span>
+                  <div><strong class="proposal-tag-name">Memória, Verdade, Justiça e Direitos Humanos:</strong> Defesa da democracia, contra retrocessos autoritários.</div>
+                </li>
+                <li class="proposal-item">
+                  <span class="proposal-bullet"></span>
+                  <div><strong class="proposal-tag-name">Justiça social e políticas universais:</strong> Saúde, educação e assistência públicas de qualidade para todos.</div>
+                </li>
+              </ul>
+            </div>
+
+            <div class="candidate-links">
+              <a href="https://www.instagram.com/luizaerundina/" target="_blank" rel="noopener noreferrer" class="link-badge instagram">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
+                @luizaerundina
+              </a>
+              <a href="https://luizaerundina.com.br/" target="_blank" rel="noopener noreferrer" class="link-badge">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><line x1="2" y1="12" x2="22" y2="12"></line><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path></svg>
+                luizaerundina.com.br
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Sâmia Bomfim -->
+        <article class="candidate-card" data-cargo="deputado-estadual" data-nome="Sâmia Bomfim" data-numero="5000" data-partido="PSOL">
+          <div class="card-top-bar">
+            <div class="candidate-headline">
+              <div class="candidate-avatar">SB</div>
+              <div class="candidate-identity">
+                <h3 class="candidate-name">Sâmia Bomfim</h3>
+                <span class="party-tag psol">PSOL</span>
+              </div>
+            </div>
+            <div class="ballot-action-group">
+              <div class="ballot-box" onclick="copyBallot('5000', 'Sâmia Bomfim')" title="Clique para copiar o número">
+                <span class="ballot-number">5000</span>
+                <button class="btn-copy-num" aria-label="Copiar número 5000">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg>
+                </button>
+              </div>
+              <button class="btn-add-cola" onclick="toggleCola('deputado-estadual', 'Sâmia Bomfim', '5000', 'PSOL')">
+                <span>+ Colinha</span>
+              </button>
+            </div>
+          </div>
+
+          <div class="candidate-body">
+            <div class="bio-section">
+              <div class="bio-title">Perfil</div>
+              <p class="bio-text">Deputada federal desde 2018 (reeleita em 2022), com atuação forte em direitos humanos e direitos das mulheres. Conhecida por pautas contra violência de gênero, por saúde da mulher e por controle de armas.</p>
+            </div>
+
+            <div class="proposals-block">
+              <div class="proposals-title">
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"></path></svg>
+                Principais Propostas &amp; Posicionamentos (2026)
+              </div>
+              <ul class="proposal-list">
+                <li class="proposal-item">
+                  <span class="proposal-bullet"></span>
+                  <div><strong class="proposal-tag-name">Direitos das mulheres:</strong> Ampliar estabilidade de gestantes no emprego; garantir informação sobre aborto legal em casos previstos em lei; combater violência doméstica e feminicídio.</div>
+                </li>
+                <li class="proposal-item">
+                  <span class="proposal-bullet"></span>
+                  <div><strong class="proposal-tag-name">Controle de armas:</strong> Proibir posse/porte de arma para quem tem medida protetiva; cassar registro de agressores armados.</div>
+                </li>
+                <li class="proposal-item">
+                  <span class="proposal-bullet"></span>
+                  <div><strong class="proposal-tag-name">Regulação das bets:</strong> Banir publicidade de apostas esportivas, com regras semelhantes às do tabaco.</div>
+                </li>
+                <li class="proposal-item">
+                  <span class="proposal-bullet"></span>
+                  <div><strong class="proposal-tag-name">Saúde e SUS:</strong> Defender financiamento adequado do SUS e políticas de saúde mental e atenção básica.</div>
+                </li>
+                <li class="proposal-item">
+                  <span class="proposal-bullet"></span>
+                  <div><strong class="proposal-tag-name">Direitos humanos e democracia:</strong> Defesa de liberdades civis, proteção a grupos vulneráveis e enfrentamento a discursos de ódio.</div>
+                </li>
+              </ul>
+            </div>
+
+            <div class="candidate-links">
+              <a href="https://www.instagram.com/samiabomfim/" target="_blank" rel="noopener noreferrer" class="link-badge instagram">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
+                @samiabomfim
+              </a>
+              <a href="https://samia5000.com.br/" target="_blank" rel="noopener noreferrer" class="link-badge">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><line x1="2" y1="12" x2="22" y2="12"></line><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path></svg>
+                samia5000.com.br
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Erika Hilton -->
+        <article class="candidate-card" data-cargo="deputado-estadual" data-nome="Erika Hilton" data-numero="5070" data-partido="PSOL">
+          <div class="card-top-bar">
+            <div class="candidate-headline">
+              <div class="candidate-avatar">EH</div>
+              <div class="candidate-identity">
+                <h3 class="candidate-name">Erika Hilton</h3>
+                <span class="party-tag psol">PSOL</span>
+              </div>
+            </div>
+            <div class="ballot-action-group">
+              <div class="ballot-box" onclick="copyBallot('5070', 'Erika Hilton')" title="Clique para copiar o número">
+                <span class="ballot-number">5070</span>
+                <button class="btn-copy-num" aria-label="Copiar número 5070">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg>
+                </button>
+              </div>
+              <button class="btn-add-cola" onclick="toggleCola('deputado-estadual', 'Erika Hilton', '5070', 'PSOL')">
+                <span>+ Colinha</span>
+              </button>
+            </div>
+          </div>
+
+          <div class="candidate-body">
+            <div class="bio-section">
+              <div class="bio-title">Perfil</div>
+              <p class="bio-text">Deputada federal desde 2023; primeira deputada federal trans negra do Brasil. Atua fortemente em direitos humanos, direitos LGBTQIA+, direitos das mulheres e políticas de inclusão.</p>
+            </div>
+
+            <div class="proposals-block">
+              <div class="proposals-title">
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"></path></svg>
+                Principais Propostas &amp; Posicionamentos (2026)
+              </div>
+              <ul class="proposal-list">
+                <li class="proposal-item">
+                  <span class="proposal-bullet"></span>
+                  <div><strong class="proposal-tag-name">Política nacional LGBTQIA+:</strong> Criar marco legal com Casas da Cidadania LGBTQIA+, órgãos de políticas em todas as esferas e sistema nacional de monitoramento.</div>
+                </li>
+                <li class="proposal-item">
+                  <span class="proposal-bullet"></span>
+                  <div><strong class="proposal-tag-name">Direitos das mulheres:</strong> Presidência da Comissão de Defesa dos Direitos da Mulher; pautas contra violência de gênero e por equidade.</div>
+                </li>
+                <li class="proposal-item">
+                  <span class="proposal-bullet"></span>
+                  <div><strong class="proposal-tag-name">Inclusão e representatividade:</strong> Ampliar acesso de jovens, população negra, LGBTQIA+ e grupos marginalizados à política e a oportunidades.</div>
+                </li>
+                <li class="proposal-item">
+                  <span class="proposal-bullet"></span>
+                  <div><strong class="proposal-tag-name">Direitos humanos e democracia:</strong> Defesa de liberdades civis, combate ao racismo, LGBTfobia e discursos de ódio.</div>
+                </li>
+                <li class="proposal-item">
+                  <span class="proposal-bullet"></span>
+                  <div><strong class="proposal-tag-name">Transparência e controle:</strong> Fiscalização de gastos públicos e políticas de Estado (não apenas de governo) para direitos humanos.</div>
+                </li>
+              </ul>
+            </div>
+
+            <div class="candidate-links">
+              <a href="https://www.instagram.com/hilton_erika/" target="_blank" rel="noopener noreferrer" class="link-badge instagram">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
+                @hilton_erika
+              </a>
+              <a href="https://manifesto.erikahilton.com.br/" target="_blank" rel="noopener noreferrer" class="link-badge">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><line x1="2" y1="12" x2="22" y2="12"></line><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path></svg>
+                manifesto.erikahilton.com.br
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Eduardo Suplicy -->
+        <article class="candidate-card" data-cargo="deputado-estadual" data-nome="Eduardo Suplicy" data-numero="13133" data-partido="PT">
+          <div class="card-top-bar">
+            <div class="candidate-headline">
+              <div class="candidate-avatar">ES</div>
+              <div class="candidate-identity">
+                <h3 class="candidate-name">Eduardo Suplicy</h3>
+                <span class="party-tag pt">PT</span>
+              </div>
+            </div>
+            <div class="ballot-action-group">
+              <div class="ballot-box" onclick="copyBallot('13133', 'Eduardo Suplicy')" title="Clique para copiar o número">
+                <span class="ballot-number">13133</span>
+                <button class="btn-copy-num" aria-label="Copiar número 13133">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg>
+                </button>
+              </div>
+              <button class="btn-add-cola" onclick="toggleCola('deputado-estadual', 'Eduardo Suplicy', '13133', 'PT')">
+                <span>+ Colinha</span>
+              </button>
+            </div>
+          </div>
+
+          <div class="candidate-body">
+            <div class="bio-section">
+              <div class="bio-title">Perfil</div>
+              <p class="bio-text">Economista, professor universitário e político; ex-prefeito de São Paulo e ex-senador. Deputado estadual reeleito; conhecido por pautas históricas como a Renda Básica de Cidadania e a defesa dos direitos humanos.</p>
+            </div>
+
+            <div class="proposals-block">
+              <div class="proposals-title">
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"></path></svg>
+                Principais Propostas &amp; Posicionamentos (2026)
+              </div>
+              <ul class="proposal-list">
+                <li class="proposal-item">
+                  <span class="proposal-bullet"></span>
+                  <div><strong class="proposal-tag-name">Renda Básica de Cidadania:</strong> Defender programa permanente de renda mínima incondicional para reduzir a pobreza extrema e a desigualdade social.</div>
+                </li>
+                <li class="proposal-item">
+                  <span class="proposal-bullet"></span>
+                  <div><strong class="proposal-tag-name">Direitos humanos e inclusão:</strong> Políticas afirmativas para população em situação de rua, LGBTQIA+, negros, idosos e grupos vulneráveis.</div>
+                </li>
+                <li class="proposal-item">
+                  <span class="proposal-bullet"></span>
+                  <div><strong class="proposal-tag-name">Trabalho e economia solidária:</strong> Apoio direto a cooperativas, incubadoras de economia solidária e programas de geração de emprego e renda.</div>
+                </li>
+                <li class="proposal-item">
+                  <span class="proposal-bullet"></span>
+                  <div><strong class="proposal-tag-name">Educação e cultura:</strong> Investimento contínuo em educação pública de base, cultura comunitária e descentralização do acesso a bens culturais.</div>
+                </li>
+                <li class="proposal-item">
+                  <span class="proposal-bullet"></span>
+                  <div><strong class="proposal-tag-name">Transparência e participação:</strong> Fortalecer conselhos populares, ouvidorias públicas e mecanismos de controle social direto.</div>
+                </li>
+              </ul>
+            </div>
+
+            <div class="candidate-links">
+              <a href="https://www.instagram.com/eduardosuplicy/" target="_blank" rel="noopener noreferrer" class="link-badge instagram">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
+                @eduardosuplicy
+              </a>
+              <a href="https://www.suplicydeputado.com.br/" target="_blank" rel="noopener noreferrer" class="link-badge">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><line x1="2" y1="12" x2="22" y2="12"></line><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path></svg>
+                suplicydeputado.com.br
+              </a>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- SEÇÃO 3: SENADORAS -->
+    <section id="senadoras" class="section-block">
+      <header class="section-header">
+        <div class="section-title-group">
+          <span class="section-order-badge">3º Voto na Urna (2 Vagas)</span>
+          <h2 class="section-title">Senadoras</h2>
+        </div>
+        <span class="section-digits-info">3 dígitos na urna &bull; Em 2026 vota-se em 2 senadores(as)</span>
+      </header>
+
+      <div class="candidate-grid">
+
+        <!-- Marina Silva -->
+        <article class="candidate-card" data-cargo="senadora" data-nome="Marina Silva" data-numero="180" data-partido="REDE">
+          <div class="card-top-bar">
+            <div class="candidate-headline">
+              <div class="candidate-avatar">MS</div>
+              <div class="candidate-identity">
+                <h3 class="candidate-name">Marina Silva</h3>
+                <span class="party-tag rede">REDE</span>
+              </div>
+            </div>
+            <div class="ballot-action-group">
+              <div class="ballot-box" onclick="copyBallot('180', 'Marina Silva')" title="Clique para copiar o número">
+                <span class="ballot-number">180</span>
+                <button class="btn-copy-num" aria-label="Copiar número 180">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg>
+                </button>
+              </div>
+              <button class="btn-add-cola" onclick="toggleCola('senadora', 'Marina Silva', '180', 'REDE')">
+                <span>+ Colinha</span>
+              </button>
+            </div>
+          </div>
+
+          <div class="candidate-body">
+            <div class="bio-section">
+              <div class="bio-title">Perfil</div>
+              <p class="bio-text">Ex-senadora pelo Acre e ex-ministra do Meio Ambiente em governos Lula e Dilma. Histórica liderança socioambiental; hoje candidata ao Senado por SP.</p>
+            </div>
+
+            <div class="proposals-block">
+              <div class="proposals-title">
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"></path></svg>
+                Principais Propostas &amp; Posicionamentos (2026)
+              </div>
+              <ul class="proposal-list">
+                <li class="proposal-item">
+                  <span class="proposal-bullet"></span>
+                  <div><strong class="proposal-tag-name">Meio ambiente e clima:</strong> Fortalecer políticas de combate ao desmatamento, transição energética justa e proteção da Amazônia e de biomas nacionais.</div>
+                </li>
+                <li class="proposal-item">
+                  <span class="proposal-bullet"></span>
+                  <div><strong class="proposal-tag-name">Economia verde:</strong> Incentivar bioeconomia, empregos verdes e cadeias produtivas sustentáveis de baixo carbono.</div>
+                </li>
+                <li class="proposal-item">
+                  <span class="proposal-bullet"></span>
+                  <div><strong class="proposal-tag-name">Democracia e instituições:</strong> Defesa irrestrita do Estado Democrático de Direito e de reformas que fortaleçam a representatividade e a ética pública.</div>
+                </li>
+                <li class="proposal-item">
+                  <span class="proposal-bullet"></span>
+                  <div><strong class="proposal-tag-name">Direitos sociais:</strong> Políticas de inclusão, igualdade de gênero e raça, e proteção prioritária a povos originários e comunidades tradicionais.</div>
+                </li>
+                <li class="proposal-item">
+                  <span class="proposal-bullet"></span>
+                  <div><strong class="proposal-tag-name">São Paulo:</strong> Pauta de mobilidade sustentável, habitação com critérios ambientais e melhoria de serviços públicos com foco em sustentabilidade urbana.</div>
+                </li>
+              </ul>
+            </div>
+
+            <div class="candidate-links">
+              <a href="https://www.instagram.com/marinasilvaoficial" target="_blank" rel="noopener noreferrer" class="link-badge instagram">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
+                @marinasilvaoficial
+              </a>
+              <a href="https://marinasilva.org.br/" target="_blank" rel="noopener noreferrer" class="link-badge">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><line x1="2" y1="12" x2="22" y2="12"></line><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path></svg>
+                marinasilva.org.br
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Simone Tebet -->
+        <article class="candidate-card" data-cargo="senadora" data-nome="Simone Tebet" data-numero="400" data-partido="PSB">
+          <div class="card-top-bar">
+            <div class="candidate-headline">
+              <div class="candidate-avatar">ST</div>
+              <div class="candidate-identity">
+                <h3 class="candidate-name">Simone Tebet</h3>
+                <span class="party-tag psb">PSB</span>
+              </div>
+            </div>
+            <div class="ballot-action-group">
+              <div class="ballot-box" onclick="copyBallot('400', 'Simone Tebet')" title="Clique para copiar o número">
+                <span class="ballot-number">400</span>
+                <button class="btn-copy-num" aria-label="Copiar número 400">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg>
+                </button>
+              </div>
+              <button class="btn-add-cola" onclick="toggleCola('senadora', 'Simone Tebet', '400', 'PSB')">
+                <span>+ Colinha</span>
+              </button>
+            </div>
+          </div>
+
+          <div class="candidate-body">
+            <div class="bio-section">
+              <div class="bio-title">Perfil</div>
+              <p class="bio-text">Ex-ministra do Planejamento e Orçamento (governo Lula), ex-senadora por Mato Grosso do Sul. Conhecida por perfil conciliador e atuação em temas fiscais, infraestrutura e agronegócio sustentável.</p>
+            </div>
+
+            <div class="proposals-block">
+              <div class="proposals-title">
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"></path></svg>
+                Principais Propostas &amp; Posicionamentos (2026)
+              </div>
+              <ul class="proposal-list">
+                <li class="proposal-item">
+                  <span class="proposal-bullet"></span>
+                  <div><strong class="proposal-tag-name">Responsabilidade fiscal:</strong> Defesa de regras claras para gastos públicos e equilíbrio das contas, com foco em credibilidade macroeconômica e atração de investimentos.</div>
+                </li>
+                <li class="proposal-item">
+                  <span class="proposal-bullet"></span>
+                  <div><strong class="proposal-tag-name">Infraestrutura e logística:</strong> Priorizar investimentos estratégicos em ferrovias, hidrovias e portos para reduzir o Custo Brasil e integrar regiões produtoras.</div>
+                </li>
+                <li class="proposal-item">
+                  <span class="proposal-bullet"></span>
+                  <div><strong class="proposal-tag-name">Agronegócio e desenvolvimento regional:</strong> Apoiar produtores com crédito, tecnologia e escoamento, combinando produção competitiva e rigor sustentável.</div>
+                </li>
+                <li class="proposal-item">
+                  <span class="proposal-bullet"></span>
+                  <div><strong class="proposal-tag-name">Segurança pública:</strong> Reforçar cooperação entre União, estados e municípios; investir em inteligência, tecnologia e controle de fronteiras.</div>
+                </li>
+                <li class="proposal-item">
+                  <span class="proposal-bullet"></span>
+                  <div><strong class="proposal-tag-name">São Paulo:</strong> Representar interesses do estado em temas como transporte metropolitano, habitação e pactuação federativa.</div>
+                </li>
+              </ul>
+            </div>
+
+            <div class="candidate-links">
+              <a href="https://www.instagram.com/simonetebet" target="_blank" rel="noopener noreferrer" class="link-badge instagram">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
+                @simonetebet
+              </a>
+              <a href="https://simonetebet.com.br/" target="_blank" rel="noopener noreferrer" class="link-badge">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><line x1="2" y1="12" x2="22" y2="12"></line><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path></svg>
+                simonetebet.com.br
+              </a>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- SEÇÃO 4: GOVERNADOR -->
+    <section id="governador" class="section-block">
+      <header class="section-header">
+        <div class="section-title-group">
+          <span class="section-order-badge">4º Voto na Urna</span>
+          <h2 class="section-title">Governador de São Paulo</h2>
+        </div>
+        <span class="section-digits-info">2 dígitos na urna</span>
+      </header>
+
+      <div class="candidate-grid">
+
+        <!-- Fernando Haddad -->
+        <article class="candidate-card" data-cargo="governador" data-nome="Fernando Haddad" data-numero="13" data-partido="PT">
+          <div class="card-top-bar">
+            <div class="candidate-headline">
+              <div class="candidate-avatar">FH</div>
+              <div class="candidate-identity">
+                <h3 class="candidate-name">Fernando Haddad</h3>
+                <span class="party-tag pt">PT</span>
+              </div>
+            </div>
+            <div class="ballot-action-group">
+              <div class="ballot-box" onclick="copyBallot('13', 'Fernando Haddad')" title="Clique para copiar o número">
+                <span class="ballot-number">13</span>
+                <button class="btn-copy-num" aria-label="Copiar número 13">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg>
+                </button>
+              </div>
+              <button class="btn-add-cola" onclick="toggleCola('governador', 'Fernando Haddad', '13', 'PT')">
+                <span>+ Colinha</span>
+              </button>
+            </div>
+          </div>
+
+          <div class="candidate-body">
+            <div class="bio-section">
+              <div class="bio-title">Perfil</div>
+              <p class="bio-text">Ex-prefeito de São Paulo (2013–2016), ex-ministro da Educação e da Fazenda (2023–2026). Candidato ao governo do Estado de São Paulo pela segunda vez (já disputou em 2022).</p>
+            </div>
+
+            <div class="proposals-block">
+              <div class="proposals-title">
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"></path></svg>
+                Principais Propostas &amp; Posicionamentos (2026)
+              </div>
+              <ul class="proposal-list">
+                <li class="proposal-item">
+                  <span class="proposal-bullet"></span>
+                  <div><strong class="proposal-tag-name">Reindustrialização e desenvolvimento:</strong> Usar a agência Desenvolve SP para crédito e investimento produtivo, atraindo novas indústrias e gerando empregos qualificados no estado.</div>
+                </li>
+                <li class="proposal-item">
+                  <span class="proposal-bullet"></span>
+                  <div><strong class="proposal-tag-name">Habitação:</strong> Ampliar programas estaduais de moradia com foco em famílias de baixa renda e requalificação de imóveis em áreas urbanas centrais bem localizadas.</div>
+                </li>
+                <li class="proposal-item">
+                  <span class="proposal-bullet"></span>
+                  <div><strong class="proposal-tag-name">Transporte e mobilidade:</strong> Investir na malha de metrô, trens metropolitanos e corredores expressos; aprimorar a integração física/tarifária e garantir tarifas justas e acessíveis.</div>
+                </li>
+                <li class="proposal-item">
+                  <span class="proposal-bullet"></span>
+                  <div><strong class="proposal-tag-name">Educação e saúde:</strong> Fortalecer as redes públicas estaduais com metas transparentes de qualidade, expansão de tempo integral e valorização das carreiras de servidores.</div>
+                </li>
+                <li class="proposal-item">
+                  <span class="proposal-bullet"></span>
+                  <div><strong class="proposal-tag-name">Segurança pública:</strong> Políticas estruturadas de prevenção à violência, valorização salarial, uso intensivo de inteligência policial e respeito irrestrito aos direitos humanos.</div>
+                </li>
+              </ul>
+            </div>
+
+            <div class="candidate-links">
+              <a href="https://www.instagram.com/fernandohaddadoficial/" target="_blank" rel="noopener noreferrer" class="link-badge instagram">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
+                @fernandohaddadoficial
+              </a>
+              <a href="https://haddadoficial.com.br/" target="_blank" rel="noopener noreferrer" class="link-badge">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><line x1="2" y1="12" x2="22" y2="12"></line><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path></svg>
+                haddadoficial.com.br
+              </a>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- SEÇÃO 5: PRESIDENTE -->
+    <section id="presidente" class="section-block">
+      <header class="section-header">
+        <div class="section-title-group">
+          <span class="section-order-badge">5º Voto na Urna</span>
+          <h2 class="section-title">Presidente da República</h2>
+        </div>
+        <span class="section-digits-info">2 dígitos na urna</span>
+      </header>
+
+      <div class="candidate-grid">
+
+        <!-- Luiz Inácio Lula da Silva -->
+        <article class="candidate-card" data-cargo="presidente" data-nome="Lula" data-numero="13" data-partido="PT">
+          <div class="card-top-bar">
+            <div class="candidate-headline">
+              <div class="candidate-avatar">LU</div>
+              <div class="candidate-identity">
+                <h3 class="candidate-name">Luiz Inácio Lula da Silva</h3>
+                <span class="party-tag pt">PT</span>
+              </div>
+            </div>
+            <div class="ballot-action-group">
+              <div class="ballot-box" onclick="copyBallot('13', 'Lula')" title="Clique para copiar o número">
+                <span class="ballot-number">13</span>
+                <button class="btn-copy-num" aria-label="Copiar número 13">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg>
+                </button>
+              </div>
+              <button class="btn-add-cola" onclick="toggleCola('presidente', 'Lula', '13', 'PT')">
+                <span>+ Colinha</span>
+              </button>
+            </div>
+          </div>
+
+          <div class="candidate-body">
+            <div class="bio-section">
+              <div class="bio-title">Perfil</div>
+              <p class="bio-text">Atual presidente do Brasil (reeleito em 2022); busca o 4º mandato na presidência. Ex-presidente (2003–2010), ex-líder sindical; histórico de liderança política nacional e internacional.</p>
+            </div>
+
+            <div class="proposals-block">
+              <div class="proposals-title">
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"></path></svg>
+                Principais Propostas &amp; Posicionamentos (2026)
+              </div>
+              <ul class="proposal-list">
+                <li class="proposal-item">
+                  <span class="proposal-bullet"></span>
+                  <div><strong class="proposal-tag-name">Emprego e renda:</strong> Manter e ampliar programas sociais (Bolsa Família, Minha Casa Minha Vida), política contínua de valorização do salário mínimo e incentivo à criação de empregos formais.</div>
+                </li>
+                <li class="proposal-item">
+                  <span class="proposal-bullet"></span>
+                  <div><strong class="proposal-tag-name">Economia e indústria:</strong> Reindustrialização nacional, oferta de crédito produtivo, apoio a micro e pequenas empresas e investimentos estruturantes em energia e logística (Novo PAC).</div>
+                </li>
+                <li class="proposal-item">
+                  <span class="proposal-bullet"></span>
+                  <div><strong class="proposal-tag-name">Reforma tributária:</strong> Implementar e calibrar as diretrizes da reforma tributária aprovada, com foco em justiça fiscal, desoneração do consumo e simplificação.</div>
+                </li>
+                <li class="proposal-item">
+                  <span class="proposal-bullet"></span>
+                  <div><strong class="proposal-tag-name">Meio ambiente e clima:</strong> Tolerância zero ao desmatamento ilegal, consolidação da matriz de transição ecológica justa e liderança global em acordos climáticos internacionais.</div>
+                </li>
+                <li class="proposal-item">
+                  <span class="proposal-bullet"></span>
+                  <div><strong class="proposal-tag-name">Direitos sociais e democracia:</strong> Fortalecimento irrestrito do SUS, valorização da universidade e escola pública, programas afirmativos de inclusão e proteção às instituições democráticas.</div>
+                </li>
+              </ul>
+            </div>
+
+            <div class="candidate-links">
+              <a href="https://www.instagram.com/lulaoficial/" target="_blank" rel="noopener noreferrer" class="link-badge instagram">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
+                @lulaoficial
+              </a>
+              <a href="https://lula.com.br/" target="_blank" rel="noopener noreferrer" class="link-badge">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><line x1="2" y1="12" x2="22" y2="12"></line><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path></svg>
+                lula.com.br
+              </a>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- Footer Editorial -->
+    <footer class="site-footer">
+      <div class="footer-content">
+        <p><strong>Guia Eleitoral Informativo 2026</strong> &bull; São Paulo, Brasil</p>
+        <p>Desenvolvido para consulta cidadã clara, rápida e acessível. Todas as informações foram compiladas a partir de dados públicos de pré-campanha e perfis oficiais.</p>
+        <p style="font-size: 0.775rem;">Lembre-se: no dia da eleição é permitido levar uma anotação em papel (a "colinha") para a cabine de votação.</p>
+      </div>
+    </footer>
+
+  </div>
+
+  <!-- Drawer Interativo de "Minha Colinha" -->
+  <aside class="cola-drawer" id="colaDrawer" aria-label="Minha Colinha Eleitoral">
+    <div class="cola-header">
+      <div class="cola-title">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline></svg>
+        Sua Cola Eleitoral
+      </div>
+      <button class="cola-close" id="colaCloseBtn" aria-label="Fechar painel da cola">&times;</button>
+    </div>
+
+    <div class="cola-body">
+      <!-- Slot Deputado Federal -->
+      <div class="cola-slot" id="slot-deputado-federal">
+        <div class="slot-meta">
+          <span class="slot-label">1. Dep. Federal (4 dígitos)</span>
+          <span class="slot-value" id="val-deputado-federal">Não selecionado</span>
+        </div>
+        <span class="slot-number" id="num-deputado-federal">----</span>
+      </div>
+
+      <!-- Slot Deputado Estadual -->
+      <div class="cola-slot" id="slot-deputado-estadual">
+        <div class="slot-meta">
+          <span class="slot-label">2. Dep. Estadual (5 dígitos)</span>
+          <span class="slot-value" id="val-deputado-estadual">Não selecionado</span>
+        </div>
+        <span class="slot-number" id="num-deputado-estadual">-----</span>
+      </div>
+
+      <!-- Slot Senador 1 -->
+      <div class="cola-slot" id="slot-senadora-1">
+        <div class="slot-meta">
+          <span class="slot-label">3. Senador(a) - 1ª Vaga</span>
+          <span class="slot-value" id="val-senadora-1">Não selecionada</span>
+        </div>
+        <span class="slot-number" id="num-senadora-1">---</span>
+      </div>
+
+      <!-- Slot Senador 2 -->
+      <div class="cola-slot" id="slot-senadora-2">
+        <div class="slot-meta">
+          <span class="slot-label">4. Senador(a) - 2ª Vaga</span>
+          <span class="slot-value" id="val-senadora-2">Não selecionada</span>
+        </div>
+        <span class="slot-number" id="num-senadora-2">---</span>
+      </div>
+
+      <!-- Slot Governador -->
+      <div class="cola-slot" id="slot-governador">
+        <div class="slot-meta">
+          <span class="slot-label">5. Governador (2 dígitos)</span>
+          <span class="slot-value" id="val-governador">Não selecionado</span>
+        </div>
+        <span class="slot-number" id="num-governador">--</span>
+      </div>
+
+      <!-- Slot Presidente -->
+      <div class="cola-slot" id="slot-presidente">
+        <div class="slot-meta">
+          <span class="slot-label">6. Presidente (2 dígitos)</span>
+          <span class="slot-value" id="val-presidente">Não selecionado</span>
+        </div>
+        <span class="slot-number" id="num-presidente">--</span>
+      </div>
+    </div>
+
+    <div class="cola-actions">
+      <button class="btn-cola-action btn-cola-whatsapp" onclick="shareWhatsApp()" title="Compartilhar no WhatsApp">
+        <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.711 2.598 2.669-.699c.969.584 1.777.946 2.791.946 3.179 0 5.765-2.587 5.767-5.766.002-3.18-2.584-5.766-5.767-5.766zm8.445 5.766c-.003 4.671-3.8 8.468-8.474 8.468-1.442 0-2.812-.366-4.019-1.042l-4.483 1.175 1.196-4.373c-.767-1.267-1.169-2.73-1.171-4.228.003-4.672 3.801-8.468 8.476-8.468 4.675 0 8.475 3.796 8.475 8.468z"/></svg>
+        WhatsApp
+      </button>
+      <button class="btn-cola-action btn-cola-copy" onclick="copyColaText()" title="Copiar texto da cola">
+        Copiar
+      </button>
+      <button class="btn-cola-action btn-cola-print" onclick="window.print()" title="Imprimir cola">
+        Imprimir
+      </button>
+    </div>
+  </aside>
+
+  <!-- Toast de Feedback -->
+  <div id="toast" class="toast-notice" role="status" aria-live="polite">
+    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg>
+    <span id="toastMsg">Número copiado!</span>
+  </div>
+
+  <script>
+    // Gerenciamento de Estado da Colinha
+    const colinha = {
+      'deputado-federal': null,
+      'deputado-estadual': null,
+      'senadora-1': null,
+      'senadora-2': null,
+      'governador': null,
+      'presidente': null
+    };
+
+    // Alternar Adição à Colinha
+    function toggleCola(cargo, nome, numero, partido) {
+      if (cargo === 'senadora') {
+        if (colinha['senadora-1'] && colinha['senadora-1'].nome === nome) {
+          colinha['senadora-1'] = null;
+        } else if (colinha['senadora-2'] && colinha['senadora-2'].nome === nome) {
+          colinha['senadora-2'] = null;
+        } else if (!colinha['senadora-1']) {
+          colinha['senadora-1'] = { nome, numero, partido };
+        } else if (!colinha['senadora-2']) {
+          colinha['senadora-2'] = { nome, numero, partido };
+        } else {
+          // Substitui o 1º se ambos estiverem cheios
+          colinha['senadora-1'] = { nome, numero, partido };
+        }
+      } else {
+        if (colinha[cargo] && colinha[cargo].nome === nome) {
+          colinha[cargo] = null;
+        } else {
+          colinha[cargo] = { nome, numero, partido };
+        }
+      }
+
+      updateColaUI();
+      saveColaStorage();
+      openColaDrawer();
+      showToast(`Colinha atualizada para ${nome}!`);
+    }
+
+    function updateColaUI() {
+      // Atualizar contagem
+      let count = 0;
+      Object.keys(colinha).forEach(key => {
+        if (colinha[key]) count++;
+      });
+      document.getElementById('colaCount').innerText = count;
+
+      // Atualizar visual dos slots
+      renderSlot('deputado-federal', 'val-deputado-federal', 'num-deputado-federal', 'slot-deputado-federal', 'Não selecionado', '----');
+      renderSlot('deputado-estadual', 'val-deputado-estadual', 'num-deputado-estadual', 'slot-deputado-estadual', 'Não selecionado', '-----');
+      renderSlot('senadora-1', 'val-senadora-1', 'num-senadora-1', 'slot-senadora-1', 'Não selecionada', '---');
+      renderSlot('senadora-2', 'val-senadora-2', 'num-senadora-2', 'slot-senadora-2', 'Não selecionada', '---');
+      renderSlot('governador', 'val-governador', 'num-governador', 'slot-governador', 'Não selecionado', '--');
+      renderSlot('presidente', 'val-presidente', 'num-presidente', 'slot-presidente', 'Não selecionado', '--');
+
+      // Atualizar botões dos cards
+      document.querySelectorAll('.candidate-card').forEach(card => {
+        const cNome = card.getAttribute('data-nome');
+        const cCargo = card.getAttribute('data-cargo');
+        const btn = card.querySelector('.btn-add-cola');
+
+        let isSelected = false;
+        if (cCargo === 'senadora') {
+          isSelected = (colinha['senadora-1'] && colinha['senadora-1'].nome === cNome) ||
+                       (colinha['senadora-2'] && colinha['senadora-2'].nome === cNome);
+        } else {
+          isSelected = (colinha[cCargo] && colinha[cCargo].nome === cNome);
+        }
+
+        if (isSelected) {
+          btn.classList.add('selected');
+          btn.innerHTML = '<span>&#10003; Na Cola</span>';
+        } else {
+          btn.classList.remove('selected');
+          btn.innerHTML = '<span>+ Colinha</span>';
+        }
+      });
+    }
+
+    function renderSlot(key, valId, numId, slotId, placeholderVal, placeholderNum) {
+      const data = colinha[key];
+      const slotEl = document.getElementById(slotId);
+      const valEl = document.getElementById(valId);
+      const numEl = document.getElementById(numId);
+
+      if (data) {
+        valEl.innerText = `${data.nome} (${data.partido})`;
+        numEl.innerText = data.numero;
+        slotEl.classList.add('filled');
+      } else {
+        valEl.innerText = placeholderVal;
+        numEl.innerText = placeholderNum;
+        slotEl.classList.remove('filled');
+      }
+    }
+
+    // Copiar número individual da urna
+    function copyBallot(numero, nome) {
+      navigator.clipboard.writeText(numero).then(() => {
+        showToast(`Número ${numero} de ${nome} copiado!`);
+      }).catch(() => {
+        showToast(`Número: ${numero}`);
+      });
+    }
+
+    // Gerar texto da colinha
+    function formatColaText() {
+      let txt = "*MINHA COLA ELEITORAL 2026 (SP)*\n\n";
+      txt += `1. Dep. Federal: ${colinha['deputado-federal'] ? `${colinha['deputado-federal'].numero} - ${colinha['deputado-federal'].nome} (${colinha['deputado-federal'].partido})` : 'A definir'}\n`;
+      txt += `2. Dep. Estadual: ${colinha['deputado-estadual'] ? `${colinha['deputado-estadual'].numero} - ${colinha['deputado-estadual'].nome} (${colinha['deputado-estadual'].partido})` : 'A definir'}\n`;
+      txt += `3. Senador(a) (1ª vaga): ${colinha['senadora-1'] ? `${colinha['senadora-1'].numero} - ${colinha['senadora-1'].nome} (${colinha['senadora-1'].partido})` : 'A definir'}\n`;
+      txt += `4. Senador(a) (2ª vaga): ${colinha['senadora-2'] ? `${colinha['senadora-2'].numero} - ${colinha['senadora-2'].nome} (${colinha['senadora-2'].partido})` : 'A definir'}\n`;
+      txt += `5. Governador: ${colinha['governador'] ? `${colinha['governador'].numero} - ${colinha['governador'].nome} (${colinha['governador'].partido})` : 'A definir'}\n`;
+      txt += `6. Presidente: ${colinha['presidente'] ? `${colinha['presidente'].numero} - ${colinha['presidente'].nome} (${colinha['presidente'].partido})` : 'A definir'}\n\n`;
+      txt += "Consulte propostas e detalhes no Guia Eleitoral 2026.";
+      return txt;
+    }
+
+    function copyColaText() {
+      const text = formatColaText();
+      navigator.clipboard.writeText(text).then(() => {
+        showToast("Cola copiada para a área de transferência!");
+      });
+    }
+
+    function shareWhatsApp() {
+      const text = encodeURIComponent(formatColaText());
+      window.open(`https://api.whatsapp.com/send?text=${text}`, '_blank');
+    }
+
+    // Notificações Toast
+    let toastTimeout;
+    function showToast(msg) {
+      const toast = document.getElementById('toast');
+      const toastMsg = document.getElementById('toastMsg');
+      toastMsg.innerText = msg;
+      toast.classList.add('show');
+      clearTimeout(toastTimeout);
+      toastTimeout = setTimeout(() => {
+        toast.classList.remove('show');
+      }, 2600);
+    }
+
+    // Gaveta da Colinha
+    const colaDrawer = document.getElementById('colaDrawer');
+    const colaToggleBtn = document.getElementById('colaToggleBtn');
+    const colaCloseBtn = document.getElementById('colaCloseBtn');
+
+    function openColaDrawer() {
+      colaDrawer.classList.add('open');
+    }
+
+    function closeColaDrawer() {
+      colaDrawer.classList.remove('open');
+    }
+
+    colaToggleBtn.addEventListener('click', () => {
+      colaDrawer.classList.toggle('open');
+    });
+
+    colaCloseBtn.addEventListener('click', closeColaDrawer);
+
+    // Sistema de Busca em Tempo Real
+    const searchInput = document.getElementById('searchInput');
+    searchInput.addEventListener('input', (e) => {
+      const term = e.target.value.toLowerCase().trim();
+      const cards = document.querySelectorAll('.candidate-card');
+
+      cards.forEach(card => {
+        const textContent = card.innerText.toLowerCase();
+        if (term === '' || textContent.includes(term)) {
+          card.style.display = 'block';
+        } else {
+          card.style.display = 'none';
+        }
+      });
+
+      // Esconder seções vazias durante a busca
+      document.querySelectorAll('.section-block').forEach(sec => {
+        const visibleCards = sec.querySelectorAll('.candidate-card[style*="display: block"]');
+        const anyVisible = Array.from(sec.querySelectorAll('.candidate-card')).some(c => c.style.display !== 'none');
+        sec.style.display = anyVisible ? 'block' : 'none';
+      });
+    });
+
+    // Dark Mode Toggle & Persistência
+    const themeToggleBtn = document.getElementById('themeToggleBtn');
+    const themeIcon = document.getElementById('themeIcon');
+
+    function applyTheme(isDark) {
+      if (isDark) {
+        document.documentElement.setAttribute('data-theme', 'dark');
+        themeIcon.innerHTML = '<path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>';
+      } else {
+        document.documentElement.removeAttribute('data-theme');
+        themeIcon.innerHTML = `
+          <circle cx="12" cy="12" r="5"></circle>
+          <line x1="12" y1="1" x2="12" y2="3"></line>
+          <line x1="12" y1="21" x2="12" y2="23"></line>
+          <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+          <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+          <line x1="1" y1="12" x2="3" y2="12"></line>
+          <line x1="21" y1="12" x2="23" y2="12"></line>
+          <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+          <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+        `;
+      }
+    }
+
+    const savedTheme = localStorage.getItem('eleicoes_2026_theme');
+    const prefersDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+    const isInitialDark = savedTheme ? savedTheme === 'dark' : prefersDark;
+    applyTheme(isInitialDark);
+
+    themeToggleBtn.addEventListener('click', () => {
+      const isCurrentDark = document.documentElement.getAttribute('data-theme') === 'dark';
+      const newTheme = !isCurrentDark;
+      applyTheme(newTheme);
+      localStorage.setItem('eleicoes_2026_theme', newTheme ? 'dark' : 'light');
+    });
+
+    // LocalStorage para Colinha
+    function saveColaStorage() {
+      try {
+        localStorage.setItem('minha_colinha_2026', JSON.stringify(colinha));
+      } catch (e) {
+        console.error(e);
+      }
+    }
+
+    function loadColaStorage() {
+      try {
+        const saved = localStorage.getItem('minha_colinha_2026');
+        if (saved) {
+          const parsed = JSON.parse(saved);
+          Object.assign(colinha, parsed);
+          updateColaUI();
+        }
+      } catch (e) {
+        console.error(e);
+      }
+    }
+
+    // Inicialização
+    loadColaStorage();
+  </script>
+</body>
+</html>
